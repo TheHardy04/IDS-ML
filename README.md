@@ -41,7 +41,7 @@ TBD
 
 ## Team members
 
-- Théo HARDY
+- [Théo HARDY](https://github.com/TheHardy04)
 - Gaël LE MOUEL
 - Adam FERRE
 
