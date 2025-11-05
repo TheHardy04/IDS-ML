@@ -37,7 +37,18 @@ TBD
 
 ## Quick start
 
-TBD
+1. Clone the repository:
+   ```bash
+    git clone https://github.com/TheHardy04/IDS-ML
+    cd IDS-ML
+    ```
+2. Install dependencies: 
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+TBC
+   
 
 ## Team members
 
