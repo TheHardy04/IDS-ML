@@ -54,7 +54,7 @@ TBC
 
 - [Théo HARDY](https://github.com/TheHardy04)
 - Gaël LE MOUEL
-- Adam FERRE
+- [Adam  FERRE] (https://github.com/LordOfDawn2)
 
 ## Acknowledgements
 
