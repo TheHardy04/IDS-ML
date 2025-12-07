@@ -16,7 +16,7 @@ try:
         rt_iot2022 = fetch_ucirepo(id=942)
 
         # data (as pandas dataframes)
-        X = rt_iot2022.data.features
+        X = rt_iot2022.data.features 
         y = rt_iot2022.data.targets
 
         # combine features and targets into a single DataFrame
