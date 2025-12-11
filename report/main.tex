@@ -1,0 +1,146 @@
+\documentclass[12pt, a4paper]{article}
+
+\bibliographystyle{ieeetr}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}       % For handling images
+\usepackage{geometry}       % For margins
+\usepackage{hyperref}       % For clickable links
+\usepackage{float}          % To position figures exactly
+\usepackage{booktabs}       % For nicer tables
+\usepackage{biblatex}       % For references
+\usepackage{listings}       % For code snippets (optional)
+\usepackage{xcolor}         % For colors
+
+% --- Page Layout ---
+\geometry{
+    left=25mm,
+    right=25mm,
+    top=25mm,
+    bottom=25mm,
+}
+
+% --- Bibliography Source ---
+\addbibresource{references.bib}
+
+% --- Title Information ---
+\title{
+    \centering
+    \textbf{Machine Learning Project Report 2025} \\
+    \large Intrusion detection systems (IDS) using Machine Learning
+    \\[2cm]
+    \includegraphics[width=0.4\textwidth]{images/esilv_logo.png} \\[2cm]
+}
+\author{
+    Théo HARDY \\
+    Gaël LE MOUEL \\
+    Adam FERRE
+}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+% -------------------------------------------------------------------
+% SECTION 1: Business Case & Scope
+% Ref: Guidelines [cite: 165, 315]
+% -------------------------------------------------------------------
+\section{Business Scope and Problem Formalization}
+
+\subsection{Business Case}
+% "Define precisely the problem you want to solve... and how this is directly linked to your field of specialization." [cite: 165]
+% Mention why this problem is interesting/relevant.
+
+\subsection{Problem Formalization}
+% Define the objective formally (e.g., "We aim to maximize F1-score for binary classification of...").
+% Mention the formal methods used[cite: 316].
+
+% -------------------------------------------------------------------
+% SECTION 2: Data Description
+% Ref: Guidelines [cite: 167, 168, 320]
+% -------------------------------------------------------------------
+\section{Data Description and Exploration}
+
+\subsection{Dataset Source}
+% Describe the source (Kaggle, UCI, etc.) and reliability[cite: 167].
+\cite{sharmila2023quantized}
+
+\subsection{Exploratory Data Analysis (EDA)}
+% Include graphics/figures here.
+% Discuss:
+% - Missing values [cite: 321]
+% - Imbalanced data [cite: 322]
+% - Outliers [cite: 323]
+
+% Example of inserting an image:
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.8\textwidth]{images/correlation_matrix.png}
+%     \caption{Correlation Matrix of Features}
+%     \label{fig:corr_matrix}
+% \end{figure}
+
+\subsection{Data Splitting}
+% Explain your Train/Test split strategy (e.g., 80/20, Stratified)[cite: 324].
+
+% -------------------------------------------------------------------
+% SECTION 3: Methodology
+% Ref: Guidelines [cite: 319, 153]
+% -------------------------------------------------------------------
+\section{Methodology}
+
+\subsection{Preprocessing}
+% Discuss encoding, scaling, duplicate removal[cite: 153].
+
+\subsection{Algorithm Description}
+% Briefly describe the models chosen (Standard vs Advanced)[cite: 317].
+% Mention the "advanced version" or "algorithm outside scope" here[cite: 307].
+
+% -------------------------------------------------------------------
+% SECTION 4: Implementation & Results
+% Ref: Guidelines [cite: 325, 326]
+% -------------------------------------------------------------------
+\section{Algorithm Implementation and Results}
+
+\subsection{Hyperparameter Tuning}
+% Explain how you addressed obstacles like parameter optimization[cite: 171].
+
+\subsection{Performance Metrics}
+% Present your results using relevant metrics (Accuracy, F1, ROC-AUC)[cite: 327].
+
+\subsection{Comparison with Baseline}
+% Compare your advanced models against the standard baseline solutions[cite: 329].
+
+% -------------------------------------------------------------------
+% SECTION 5: Discussion
+% Ref: Guidelines [cite: 330, 155]
+% -------------------------------------------------------------------
+\section{Discussion and Limitations}
+
+\subsection{Addressing Obstacles}
+% Discuss overfitting, underfitting, and data imbalance handling[cite: 155, 328].
+
+\subsection{Limitations}
+% What could not be solved? What are the limits of your current model?[cite: 318].
+
+% -------------------------------------------------------------------
+% SECTION 6: Conclusion
+% Ref: Guidelines [cite: 172]
+% -------------------------------------------------------------------
+\section{Conclusion}
+% Conclude on how you tackled the business case[cite: 172].
+
+% -------------------------------------------------------------------
+% REFERENCES
+% Ref: Guidelines [cite: 174, 309]
+% -------------------------------------------------------------------
+\newpage
+\printbibliography[title={Scientific References}]
+
+\end{document}
