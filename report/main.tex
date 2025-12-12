@@ -130,7 +130,7 @@ Finally, correlations between features were examined to identify redundant varia
 
 \subsection{Preprocessing}
 % Discuss encoding, scaling, duplicate removal[cite: 153].
-As said in \ref{sec:eda}, the dataset was already preprocessed. It was cleaned and required no missing value imputation or duplicate removal.
+As said in \ref{sec:eda}, the dataset was already preprocessed. It was cleaned and required no missing value imputation or duplicate removal. However, feature scaling and label encoding were performed using \texttt{StandardScaler} and \texttt{LabelEncoder} from the sklearn library. This ensured that all features were on a comparable scale, which is particularly important for distance-based algorithms.
 
 \subsection{Algorithm Description}
 % Briefly describe the models chosen (Standard vs Advanced)[cite: 317].
