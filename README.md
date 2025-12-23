@@ -47,8 +47,18 @@ TBD
     pip install -r requirements.txt
     ```
 
-TBC
-   
+3. Download the RT-IoT2022 with the `import_data.py` script:
+    ```bash
+    python import_data.py 
+    ```
+
+4. You can put the following code in your notebook or python script to load the data:
+    ```python
+    import pandas as pd
+    
+    # load dataset
+    data = pd.read_csv('../data/rt_iot2022.csv')
+    ```
 
 ## Team members
 
