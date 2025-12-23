@@ -21,19 +21,29 @@ The goal of this project is to develop a high-performance model capable of ident
 - stable calibration for production use,
 - low latency and a low false-alarm rate.
 
-## Evaluation metrics
-
-TBC
-
-To assess both predictive quality and operational reliability, we will use the following metrics:
-- AUROC (Area Under the ROC Curve)  
-- Precision-Recall AUC  
-- False Positive Rate at 95% True Positive Rate  
-- False alarms per hour
-
 ## Repository structure
 
-TBD
+```
+IDS-ML/
+├── assets/                 # Images and logos used in the project
+├── data/                   # Dataset directory
+│   └── rt_iot2022.csv      # The RT-IoT2022 dataset
+├── jobs/                   # Saved models and preprocessing pipelines
+│   ├── wdro_models/        # Wasserstein Distributionally Robust Optimization models
+│   ├── logistic_regression_PCA_model.joblib
+│   └── preprocessing.joblib
+├── notebooks/              # Jupyter notebooks for analysis and modeling
+│   ├── Cross_Validation.ipynb
+│   ├── grid_search.ipynb
+│   ├── LogisticRegression_with_PCA.ipynb
+│   └── WDRO.ipynb
+├── report/                 # LaTeX source for the project report
+│   ├── images/
+│   ├── main.tex
+│   └── references.bib
+├── import_data.py          # Script to download the dataset
+└── requirements.txt        # Python dependencies
+```
 
 ## Quick start
 
@@ -46,12 +56,10 @@ TBD
     ```bash
     pip install -r requirements.txt
     ```
-
 3. Download the RT-IoT2022 with the `import_data.py` script:
     ```bash
     python import_data.py 
     ```
-
 4. You can put the following code in your notebook or python script to load the data:
     ```python
     import pandas as pd
@@ -71,6 +79,4 @@ TBD
 <a href="https://www.esilv.fr/" target="_blank" rel="noopener noreferrer">
   <img src="./assets/esilv_logo.png" alt="ESILV Logo" width="100" />
 </a>
-
-TBD
 
